@@ -1,0 +1,12 @@
+[Unit]
+Description=Inventory Recipe Tracker
+
+[Service]
+ExecStart=/usr/bin/node /usr/src/inventory/app.js
+Restart=always
+Environment=PATH=/usr/bin:/usr/local/bin
+Environment=NODE_ENV=development
+WorkingDirectory=/usr/src/inventory/
+
+[Install]
+WantedBy=multi-user.target
