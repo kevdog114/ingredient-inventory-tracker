@@ -16,5 +16,8 @@
   "engines": {
     "node": "*",
     "npm": "*"
+  },
+  "scripts": {
+    "build": "webpack"
   }
 }
