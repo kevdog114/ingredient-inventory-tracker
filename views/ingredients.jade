@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  .mdl-grid
+    .mdl-cell.mdl-cell--12-col(ng-controller='ingredientsCtrl as ing')
+      h1 Ingredients
+      p Hello World
+      p(ng-bind='ing.IsWatching')
+      button(ng-click='ing.SetWatching(!ing.IsWatching)', ng-bind='ing.IsWatching ? "Stop" : "Start"')
+      div#cam(style='width: 400px; height: 400px; border: 1px solid black;')
