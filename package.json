@@ -8,6 +8,7 @@
     "jade": "*",
     "method-override": "*",
     "morgan": "*",
+    "mysql": "^2.13.0",
     "quagga": "^0.11.6",
     "serve-favicon": "*",
     "stylus": "*",
@@ -19,5 +20,9 @@
   },
   "scripts": {
     "build": "webpack"
+  },
+  "devDependencies": {
+    "@types/node": "^7.0.18",
+    "typescript": "^2.3.2"
   }
 }
