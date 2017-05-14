@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  .mdl-grid
+    .mdl-cell.mdl-cell--12-col(ng-controller='RecipesCtrl as rCtl')
+      h1 Recipes
+      md-content
+        md-list.md-dense
+          md-subheader Here are your recipes
+          md-list-item(ng-repeat="r in rCtl.Recipes" ui-sref="/recipes/{{r.recipe_id}}")
+            p {{r.title}}
+              em ({{r.servings}} servings)
+        ui-view

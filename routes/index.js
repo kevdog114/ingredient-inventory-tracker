@@ -8,6 +8,9 @@ exports.index = function(req, res){
   });
 };
 
+exports.recipes = function(req, res) {
+  res.render("recipes");
+};
 exports.ingredients = function(req, res){
   res.render('ingredients');
 };

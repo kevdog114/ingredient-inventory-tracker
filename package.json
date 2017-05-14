@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "dependencies": {
     "angular": "^1.6.4",
+    "angular-animate": "^1.6.4",
+    "angular-aria": "^1.6.4",
+    "angular-material": "^1.1.4",
+    "angular-ui-router": "^1.0.3",
     "body-parser": "*",
     "express": "*",
     "jade": "*",
@@ -12,6 +16,7 @@
     "quagga": "^0.11.6",
     "serve-favicon": "*",
     "stylus": "*",
+    "ui-router": "^1.0.0-alpha.3",
     "webpack": "^2.5.1"
   },
   "engines": {
@@ -19,10 +24,11 @@
     "npm": "*"
   },
   "scripts": {
-    "build": "webpack"
+    "build": "tsc || webpack"
   },
   "devDependencies": {
     "@types/node": "^7.0.18",
-    "typescript": "^2.3.2"
+    "typescript": "^2.3.2",
+    "typings": "^2.1.1"
   }
 }

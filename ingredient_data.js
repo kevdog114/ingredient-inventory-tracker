@@ -1,5 +1,5 @@
 var mysql = require('mysql');
-var connectionFact = require('../mysql_connection_factory');
+var connectionFact = require('./mysql_connection_factory');
 
 module.exports.GetIngredients = function(fnWhenDone) {
   var con = connectionFact.CreateConnection(mysql);
@@ -22,7 +22,7 @@ module.exports.GetRecipes = function(fnWhenDone) {
   var con = connectionFact.CreateConnection(mysql);
   con.connect();
   con.query('SELECT * FROM inventory.recipe', function(error, results, fields) {
-    fnWhenDone(results[0]);
+    fnWhenDone(results);
   });
 };
 
